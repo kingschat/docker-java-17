@@ -7,8 +7,7 @@ RUN microdnf -y install python2
 RUN microdnf -y install make \
                         sudo \
                         curl \
-                        file \
-                        ssh
+                        file
 
 RUN microdnf -y install ruby2.7 \
                         ruby2.7-dev \
