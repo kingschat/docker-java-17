@@ -9,6 +9,8 @@ RUN microdnf -y install make \
                         curl \
                         file
 
+RUN microdnf module enable ruby:2.7
+
 RUN microdnf -y install ruby2.7 \
                         ruby2.7-dev \
                         build-essential ; \
