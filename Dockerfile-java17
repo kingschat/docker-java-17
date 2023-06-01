@@ -2,7 +2,7 @@ FROM openjdk:17-jdk
 
 RUN microdnf -y update
 
-RUN microdnf -y install python
+RUN microdnf -y install python2
 
 RUN microdnf -y install make \
                         sudo \
