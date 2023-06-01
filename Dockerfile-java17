@@ -1,16 +1,16 @@
 FROM openjdk:17-jdk
 
-RUN apt-get -y update
+RUN microdnf -y update
 
-RUN apt-get -y install python
+RUN microdnf -y install python
 
-RUN apt-get -y install make \
+RUN microdnf -y install make \
                         sudo \
                         curl \
                         file \
                         ssh
 
-RUN apt-get -y install ruby2.7 \
+RUN microdnf -y install ruby2.7 \
                         ruby2.7-dev \
                         build-essential ; \
     gem install fastlane
