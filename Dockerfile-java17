@@ -10,7 +10,8 @@ RUN microdnf -y install make \
                         file \
                         gcc \
                         gcc-c++ \
-                        redhat-rpm-config
+                        redhat-rpm-config \
+                        git
 
 RUN microdnf -y module enable ruby:2.7
 
